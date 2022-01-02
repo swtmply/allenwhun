@@ -1,27 +1,24 @@
 import Head from 'next/head';
 import React, { PropsWithChildren } from 'react';
+import Footer from './Footer';
+import Nav from './Nav';
 
 export default function Layout({
   children,
   title,
 }: PropsWithChildren<{ title?: string }>) {
   return (
-    <div className="bg-slate-50 grid place-items-center">
+    <div className="grid place-items-center">
       <Head>
         <title>{title}</title>
       </Head>
 
-      <div className="w-[800px] bg-slate-100 min-h-screen p-4">
-        <header>
-          <nav>{/* TODO Nav Links */}</nav>
-        </header>
+      <div className="w-[700px] min-h-screen p-4">
+        <Nav />
 
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
 
-        <footer>
-          {/* <hr /> */}
-          {/* TODO Footer Content */}
-        </footer>
+        <Footer />
       </div>
     </div>
   );
