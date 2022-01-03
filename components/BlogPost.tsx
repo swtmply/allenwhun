@@ -9,9 +9,11 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
         <div className="flex justify-between items-end mb-2">
           <h2 className="font-semibold text-xl">{post.title}</h2>
 
-          <p className="text-stone-600 text-sm">{post.publishedAt}</p>
+          <p className="text-stone-600 text-sm dark:text-neutral-300">
+            {post.publishedAt}
+          </p>
         </div>
-        <p className="text-stone-600">{post.summary}</p>
+        <p className="text-stone-600 dark:text-neutral-300">{post.summary}</p>
       </div>
     </Link>
   );

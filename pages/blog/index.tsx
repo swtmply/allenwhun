@@ -11,7 +11,7 @@ export default function Blog({ posts }: BlogProps) {
       <div className="flex flex-col gap-4 mb-8">
         <h1 className="text-5xl font-bold ">Blog</h1>
 
-        <p className="text-stone-600">
+        <p className="text-stone-600 dark:text-neutral-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illum
           labore sit autem, nesciunt laudantium nobis eius id asperiores est,
           fuga.

@@ -20,7 +20,6 @@ interface IPost {
 function Post({ source, frontMatter }: IPost) {
   return (
     <Layout>
-      {/* TODO Add Meta Component */}
       <Head>
         <meta
           name="description"
@@ -33,8 +32,10 @@ function Post({ source, frontMatter }: IPost) {
           key="ogDescription"
         />
       </Head>
-      <article className="min-w-full prose prose-img:rounded-lg prose-h3:text-2xl prose-h3:font-bold prose-p:text-stone-600">
-        <h1 className="font-bold text-5xl">{frontMatter.title}</h1>
+      <article className="min-w-full prose prose-img:rounded-lg prose-h3:text-2xl prose-h3:font-bold prose-p:text-stone-600 dark:prose-headings:text-stone-200 dark:prose-p:text-stone-300">
+        <h1 className="font-bold text-5xl dark:text-stone-200">
+          {frontMatter.title}
+        </h1>
         <MDXRemote {...source} components={MDXComponents} />
       </article>
     </Layout>

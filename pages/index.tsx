@@ -13,8 +13,8 @@ const Home: NextPage = () => {
           alt="Picture of me"
           className="rounded-lg"
         />
-        <div className="text-stone-600">
-          <h2 className="font-bold text-5xl mb-2 text-black">
+        <div className="text-stone-600 dark:text-neutral-300">
+          <h2 className="font-bold text-5xl mb-2 text-black dark:text-white">
             John Allen <br /> Delos Reyes
           </h2>
           <p className="mb-4">
@@ -29,14 +29,14 @@ const Home: NextPage = () => {
 
       <section className="mb-12">
         <h3 className="font-bold text-3xl mb-4">Recent Projects</h3>
-        <p className="text-stone-600">
+        <p className="text-stone-600 dark:text-neutral-300">
           Some of the projects that I have worked on and currently working on.
         </p>
       </section>
 
       <section className="mb-12">
         <h3 className="font-bold text-3xl mb-4">Technologies I Use</h3>
-        <p className="text-stone-600">
+        <p className="text-stone-600 dark:text-neutral-300">
           These are the techologies I use to create web applications for
           projects and personal use.
         </p>

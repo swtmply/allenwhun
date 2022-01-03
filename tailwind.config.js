@@ -20,7 +20,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.stone.100'),
+            color: theme('colors.neutral.300'),
             a: {
               color: theme('colors.blue.400'),
               '&:hover': {

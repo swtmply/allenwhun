@@ -46,7 +46,7 @@ const FooterLink = ({
     <Link href={href} passHref>
       <a
         {...rest}
-        className="hover:text-stone-900 transition-colors text-stone-700 py-1 rounded-lg"
+        className="hover:text-stone-900 transition-colors text-stone-700 py-1 rounded-lg dark:text-neutral-300 dark:hover:text-neutral-500"
       >
         {text}
       </a>

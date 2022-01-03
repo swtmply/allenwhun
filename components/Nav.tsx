@@ -29,7 +29,7 @@ const NavItem = ({ href, text }: { href: string; text: string }) => {
       <a
         className={`${
           isActive && 'font-bold'
-        } hover:bg-gray-200 transition-colors text-stone-700 px-4 py-1 rounded-lg`}
+        } hover:bg-gray-200 transition-colors text-stone-700 px-4 py-1 rounded-lg dark:text-neutral-300  dark:hover:bg-neutral-800`}
       >
         {text}
       </a>

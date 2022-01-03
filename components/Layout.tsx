@@ -9,6 +9,8 @@ export default function Layout({
 }: PropsWithChildren<{ title?: string }>) {
   return (
     <div className="grid place-items-center">
+      {/* TODO Add Meta Component */}
+
       <Head>
         <title>{title}</title>
       </Head>
