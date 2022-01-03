@@ -32,10 +32,14 @@ function Post({ source, frontMatter }: IPost) {
           key="ogDescription"
         />
       </Head>
-      <article className="min-w-full prose prose-img:rounded-lg prose-h3:text-2xl prose-h3:font-bold prose-p:text-stone-600 dark:prose-headings:text-stone-200 dark:prose-p:text-stone-300">
+      <article className="min-w-full prose prose-img:rounded-lg prose-h3:text-2xl prose-h3:font-bold prose-p:text-stone-600 dark:prose-headings:text-stone-200 dark:prose-p:text-stone-300 dark:prose-code:text-stone-50 hover:prose-a:text-pink-500">
         <h1 className="font-bold text-5xl dark:text-stone-200">
           {frontMatter.title}
         </h1>
+        <p>
+          {frontMatter.author} /{' '}
+          <span className="text-sm">{frontMatter.publishedAt}</span>
+        </p>
         <MDXRemote {...source} components={MDXComponents} />
       </article>
     </Layout>
