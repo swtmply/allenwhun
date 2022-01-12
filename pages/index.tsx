@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <Layout title="Home Page">
       <header className="col-span-full grid grid-cols-6 min-h-screen items-center mx-6 pb-64">
         <div className="col-span-full">
-          <p className="font-mono text-gray-200 col-span-full mt-12 mb-2 text-xs">
+          <p className="font-mono font-bold text-gray-200 col-span-full mt-12 mb-2 text-xs">
             Hi I&rsquo;m
           </p>
           <h1 className="text-5xl font-bold col-span-full mb-4 tracking-wide">
@@ -25,7 +25,9 @@ const Home: NextPage = () => {
       </header>
 
       <section className="col-span-full mb-16 mx-6">
-        <p className="font-mono text-xs text-gray-200 mb-2">Introduction</p>
+        <p className="font-mono font-bold text-xs text-gray-200 mb-2">
+          Introduction
+        </p>
         <h2 className="text-2xl font-bold tracking-wide text-transparent bg-clip-text gradient-bvp w-max mb-1">
           About me
         </h2>
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
         </Link>
       </section>
 
-      <section className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 col-span-full p-6 overflow-x-hidden mb-16">
+      <section className="bg-gray-100 dark:bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 col-span-full p-6 overflow-x-hidden mb-16">
         <h2 className="text-2xl font-bold tracking-wide text-transparent bg-clip-text gradient-bvp w-max mb-1">
           My Stack
         </h2>
@@ -83,7 +85,9 @@ const Home: NextPage = () => {
       </section>
 
       <section className="col-span-full mb-16 mx-6">
-        <p className="font-mono text-xs text-gray-200 mb-2">Projects</p>
+        <p className="font-mono font-bold text-xs text-gray-200 mb-2">
+          Projects
+        </p>
         <h2 className="text-2xl font-bold tracking-wide text-transparent bg-clip-text gradient-bvp w-max mb-1">
           Recent Works of mine
         </h2>
@@ -140,7 +144,7 @@ const Home: NextPage = () => {
         </Link>
       </section>
 
-      <section className="after:bg-clip-padding after:backdrop-filter after:backdrop-blur-xl after:bg-opacity-60 col-span-full p-6 mb-16 relative after:bg-gray-500 after:-rotate-[5deg] after:-inset-5 after:absolute after:-z-[1]">
+      <section className="after:bg-clip-padding after:backdrop-filter after:backdrop-blur-xl after:bg-opacity-60 col-span-full p-6 mb-16 relative after:bg-gray-100 dark:after:bg-gray-500 after:-rotate-[5deg] after:-inset-5 after:absolute after:-z-[1]">
         <h2 className="text-2xl font-bold tracking-wide text-transparent bg-clip-text gradient-bvp w-max mb-1">
           Testimonials
         </h2>
@@ -175,11 +179,13 @@ const Home: NextPage = () => {
       </section>
 
       <section className="col-span-full mb-16 mx-6">
-        <p className="font-mono text-xs text-gray-200 mb-2">Contact Me</p>
+        <p className="font-mono font-bold text-xs text-gray-200 mb-2">
+          Contact Me
+        </p>
         <h2 className="text-2xl font-bold tracking-wide text-transparent bg-clip-text gradient-bvp mb-8">
           Want me to work in your desired project?
         </h2>
-        <div className="p-4 rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
+        <div className="p-4 rounded-md bg-gray-100 dark:bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60">
           <h4 className="text-xl font-semibold mb-2">
             Tell me about your project.
           </h4>
@@ -192,10 +198,10 @@ const Home: NextPage = () => {
             <input
               type="text"
               placeholder="Your email address"
-              className="p-2 bg-white text-black w-full rounded-md ring ring-gray-200 active:ring-pink-300 focus:ring-opacity-80"
+              className="p-2 bg-white text-black w-full rounded-md ring ring-gray-100 dark:ring-gray-200 active:ring-pink-300 focus:ring-opacity-80"
             />
             <textarea
-              className="p-2 bg-white text-black w-full rounded-md ring ring-gray-200 active:ring-pink-300 focus:ring-opacity-80"
+              className="p-2 bg-white text-black w-full rounded-md ring ring-gray-100 dark:ring-gray-200 active:ring-pink-300 focus:ring-opacity-80"
               placeholder="Tell me the gist of your project."
               rows={10}
             />

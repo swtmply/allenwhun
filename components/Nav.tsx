@@ -1,4 +1,5 @@
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
@@ -7,15 +8,40 @@ export default function Nav() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between items-center mt-4 mb-12">
-      <nav className="flex gap-1">
-        <NavItem href="/" text="Home" />
-        <NavItem href="/blog" text="Blog" />
-        <NavItem href="/projects" text="Projects" />
-      </nav>
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        Dark Mode Toggle
-      </button>
+    <header className="flex justify-between px-6 py-3 items-center">
+      <div className="flex items-center gap-4">
+        <Image
+          src="/assets/logos/aw-iconmark.svg"
+          width={50}
+          height={60}
+          alt="aw-iconmark"
+        />
+      </div>
+      <div className="flex gap-2">
+        <button
+          className="pt-2 px-2 rounded"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          <Image
+            src={
+              theme === 'dark'
+                ? '/assets/icons/light-mode.svg'
+                : '/assets/icons/dark-mode.svg'
+            }
+            width={30}
+            height={30}
+            alt="aw-iconmark"
+          />
+        </button>
+        <button className="pt-2 px-2 rounded">
+          <Image
+            src="/assets/icons/menu.svg"
+            width={30}
+            height={30}
+            alt="aw-iconmark"
+          />
+        </button>
+      </div>
     </header>
   );
 }

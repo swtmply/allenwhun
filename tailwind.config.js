@@ -28,6 +28,7 @@ module.exports = {
         200: '#B5B5B5',
         500: '#3F3F3F',
         700: '#303030',
+        cool: '#C8CFDA',
       },
     },
     extend: {

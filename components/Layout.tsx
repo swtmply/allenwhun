@@ -20,6 +20,8 @@ export default function Layout({
         <div className="rounded-full animate-pulse-scale bg-pink-400 aspect-square w-[250px] sticky top-0 blur-2xl"></div>
       </div>
 
+      <Nav />
+
       <div className="min-h-screen">
         <main className="overflow-x-hidden">{children}</main>
       </div>
