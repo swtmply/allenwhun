@@ -10,6 +10,12 @@
   }
 }
 
+/* glassmorph 
+
+  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-xl dark:bg-opacity-60 
+
+*/
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-none::-webkit-scrollbar {
   display: none;

@@ -2,9 +2,10 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
 
   return (
@@ -42,9 +43,20 @@ export default function Nav() {
           />
         </button>
       </div>
+      {/* <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
     </header>
   );
 }
+
+const NavMenu = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  return <nav className="fixed inset-0 max-h-[50vh] bg-gray-700"></nav>;
+};
 
 const NavItem = ({ href, text }: { href: string; text: string }) => {
   const router = useRouter();
