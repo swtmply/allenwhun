@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { BlogPostProps } from '../interfaces/Blog';
+import { IBlog } from '../interfaces/Blog';
 
-const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
+const BlogPost = ({ post }: { post: IBlog }) => {
   return (
     <Link href={`blog/${post.filename}`} passHref>
       <div className="cursor-pointer">

@@ -8,19 +8,20 @@ export default function Layout({
   title,
 }: PropsWithChildren<{ title?: string }>) {
   return (
-    <div className="grid place-items-center">
-      {/* TODO Add Meta Component */}
-
+    <div className="relative">
       <Head>
         <title>{title}</title>
       </Head>
 
-      <div className="w-[700px] min-h-screen p-4">
-        <Nav />
+      <div className="fixed top-72 -left-20 -z-50">
+        <div className="rounded-full animate-pulse-scale bg-blue-400 aspect-square w-[150px] sticky top-0 blur-2xl"></div>
+      </div>
+      <div className="fixed top-8 -right-32 -z-50">
+        <div className="rounded-full animate-pulse-scale bg-pink-400 aspect-square w-[250px] sticky top-0 blur-2xl"></div>
+      </div>
 
-        <main className="w-full">{children}</main>
-
-        <Footer />
+      <div className="min-h-screen">
+        <main className="overflow-x-hidden">{children}</main>
       </div>
     </div>
   );

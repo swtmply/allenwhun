@@ -2,10 +2,10 @@ import { GetStaticProps } from 'next';
 import path from 'path';
 import BlogPost from '../../components/BlogPost';
 import Layout from '../../components/Layout';
-import { BlogProps } from '../../interfaces/Blog';
+import { IBlog } from '../../interfaces/Blog';
 import { getPostBySlug, getPosts } from '../../lib/mdx';
 
-export default function Blog({ posts }: BlogProps) {
+export default function Blog({ posts }: { posts: IBlog[] }) {
   return (
     <Layout>
       <div className="flex flex-col gap-4 mb-8">

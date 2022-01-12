@@ -6,11 +6,3 @@ export interface IBlog {
   filename: string;
   description: string;
 }
-
-export type BlogPostProps = {
-  post: IBlog;
-};
-
-export type BlogProps = {
-  posts: IBlog[];
-};
