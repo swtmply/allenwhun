@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <section className="col-span-full mb-16 mx-6">
+      <section className="col-span-full mb-16 mx-6 py-16" id="about-me">
         <p className="font-mono font-bold text-xs text-gray-200 mb-2">
           Introduction
         </p>
@@ -168,17 +168,17 @@ const Home: NextPage = () => {
               Wow allen mylove talapingping talapong pong talap2 hehehe
               whahaaaaaa
             </p>
-            <span className="absolute text-gray-500 -top-12 -left-3 font-serif text-8xl">
+            <span className="absolute text-gray-200 dark:text-gray-500 -top-12 -left-3 font-serif text-8xl">
               &ldquo;
             </span>
-            <span className="absolute text-gray-500 -bottom-14 -right-3 font-serif text-8xl">
+            <span className="absolute text-gray-200 dark:text-gray-500 -bottom-14 -right-3 font-serif text-8xl">
               &rdquo;
             </span>
           </div>
         </div>
       </section>
 
-      <section className="col-span-full mb-16 mx-6">
+      <section className="col-span-full mb-16 mx-6 py-16" id="contact">
         <p className="font-mono font-bold text-xs text-gray-200 mb-2">
           Contact Me
         </p>
